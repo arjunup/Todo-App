@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Todo List using Enyo JS Framework </title>
+  <link rel=stylesheet href= "./enyo-2.0b/enyo.css">
+  <link rel=stylesheet href= "./enyo-2.0b/bootstrap.css">
+  <link rel=stylesheet href= "./enyo-2.0b/bootstrap-responsive.css">
+  <script src="./enyo-2.0b/enyo.js"></script>
+  <script type="text/javascript" src="./js/todo.js"></script>
+	 	
+		
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				  <a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
+					    <span class="icon-bar"></span>
+					    <span class="icon-bar"></span>
+					    <span class="icon-bar"></span>
+				  </a>
+			  <a href="#" class="brand">Todo App</a>
+				  <div class="nav-collapse">
+				    <ul class="nav">
+				      <li class="active"><a href="http://www.arjunupadhyaya.com">Home</a></li>
+				      <li><a href="http://www.arjunupadhyaya.com/blog">Blog</a></li>
+				    </ul>
+				  </div><!--/.nav-collapse -->
+			</div>
+		</div>
+    </div>
+    
+    <div id = "content" class="container">
+    		<script type="text/javascript">	
+			var control2 = new toDoApp({});
+			//control2.renderInto(document.body);
+			control2.renderInto(document.getElementById('content'));
+		</script>  
+    </div>
+    
+    <hr>
+    
+    <footer class="footer">
+    	<p>Todo App </p>
+    	<p> Arjun Upadhyaya </p>
+    </footer>
+    
+    
+    
+</body>
+</html>
